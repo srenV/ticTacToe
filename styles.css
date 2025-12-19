@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    font-family: monospace, sans-serif;
+    font-weight: 900;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    background-color: palegreen;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap:  3rem;
+}
+
+#infoWrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+#gameBoard {
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    gap: 1rem;
+    background-color: orangered;
+    padding: 2rem;
+    border-radius: 3rem;
+    border: .5rem solid;
+}
+
+.field {
+    display: grid;
+    background-color: whitesmoke;
+    border-radius: 2rem;
+    border: .5rem solid;
+    transition: .3s ease-in-out;
+    place-content: center;
+    text-align: center;
+}
+
+.field:hover {
+    transform: scale(1.1);
+}
+
+.circle {
+    background-color: palevioletred;
+    background-image: url(./assets/circle.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cross {
+    background-color: paleturquoise;
+    background-image: url(./assets/cross.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#playAgainDialog{
+    place-content: center;
+    flex-direction: column;
+    text-align: center;
+}
