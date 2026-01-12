@@ -20,6 +20,11 @@ main{
     gap:  3rem;
 }
 
+footer{
+    position: absolute;
+    bottom: 1rem;
+}
+
 #infoWrapper{
     display: flex;
     align-items: center;
